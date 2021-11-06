@@ -1,0 +1,25 @@
+{
+   "type": "postgres",
+   "host": "chunee.db.elephantsql.com",
+   "port": 5432,
+   "username": "gvpmtomb",
+   "password": "KVhB2uvAM0T_AfUFd7xFzC1Pa_Y2xduR",
+   "database": "gvpmtomb",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "./src/entity/*"
+   ],
+
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
