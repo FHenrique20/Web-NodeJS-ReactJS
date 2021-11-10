@@ -1,10 +1,10 @@
 {
    "type": "postgres",
-   "host": "chunee.db.elephantsql.com",
+   "host": "rajje.db.elephantsql.com",
    "port": 5432,
-   "username": "gvpmtomb",
-   "password": "KVhB2uvAM0T_AfUFd7xFzC1Pa_Y2xduR",
-   "database": "gvpmtomb",
+   "username": "ztcmobhe",
+   "password": "Bxq53NICIcPCvTlDn5Yg8Z6-IeTZXUxD",
+   "database": "ztcmobhe",
    "synchronize": true,
    "logging": false,
    "entities": [

@@ -1,23 +1,18 @@
 import { Router, request, response, Request, Response} from 'express'
- 
-import { getTasks } from './controller/TasksController';
-import { saveTask } from './controller/TasksController';
-import { getTask } from './controller/TasksController';
-import { updateTask } from './controller/TasksController';
-import { deleteTask } from './controller/TasksController';
-import { finishedTask } from './controller/TasksController';
- 
+
+import { getAlunos, saveAluno, getAluno, updateAluno, deleteAluno, registrationAluno } from './controller/AlunosController';
+
 const routes = Router()
- 
+
 routes.get('/home', (request: Request, response: Response) => {
-    return response.json({ message: 'Hello Turma 007!' })
+    return response.json({ message: 'Hello Turma! 007' })
 })
- 
-routes.get('/tasks', getTasks)
-routes.post('/tasks', saveTask)
-routes.get('/tasks/:id', getTask)
-routes.put('/tasks/:id', updateTask)
-routes.delete('/tasks/:id', deleteTask)
-routes.patch('/tasks/:id', finishedTask)
- 
+
+routes.get('/alunos', getAlunos)
+routes.post('/aluno', saveAluno)
+routes.get('/aluno/:id', getAluno)
+routes.put('/aluno/:id', updateAluno)
+routes.delete('/aluno/:id', deleteAluno)
+routes.patch('/aluno/:id', registrationAluno)
+
 export default routes
