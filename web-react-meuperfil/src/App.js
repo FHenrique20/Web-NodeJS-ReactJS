@@ -16,6 +16,8 @@ class App extends Component {
         </div>
         </div>
         <h3>Dados Pessoas</h3>
+        <FotoPerfil />
+
         <p>Nome: Fábio Silva</p>
         <p>Idade: 21</p>
         
@@ -32,3 +34,13 @@ class App extends Component {
  
 export default App;
  
+class FotoPerfil extends Component {
+  render(){
+
+    let img = 'https://files.tecnoblog.net/wp-content/uploads/2021/03/My-Hero-Academia-700x420.jpeg';
+ 
+    return(
+        <img src={img} width={250} height={180} />
+    );
+  }
+}
